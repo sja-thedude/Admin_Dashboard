@@ -9,6 +9,7 @@
 
     <!-- CSS -->
     <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
 
@@ -26,80 +27,106 @@
     <!-- Navigation Panel -->
     <nav>
         <div class="grid-nav">
-            <div class="grid-nav-head">
-                <div class="grid-nav-logo">
-                    <span class="mdi mdi-view-dashboard navlogo"></span>
+            <div class="nav-main">
+                <div class="grid-nav-head">
+                    <div class="grid-nav-logo">
+                        <span class="mdi mdi-view-dashboard navlogo"></span>
+                    </div>
+                    <div class="nav-grid-title">
+                        <p>Dashboard</p>
+                    </div>
                 </div>
-                <div class="nav-grid-title">
-                    <p>Dashboard</p>
+                <div class="menubtn">
+                    <img class="btn" src="hamburger.png" alt="Union" />
                 </div>
             </div>
+            <div class="nav-ditems">
+                <div class="grid-nav-top">
+                    <div class="nav-ditem">
+                        <div class="grid-nav-box-logo">
+                            <span class="mdi mdi-home nav-sublogo"></span>
+                        </div>
+                        <div class="grid-nav-box">
+                            <a href="index.html">Home</a>
+                        </div>
+                    </div>
 
-            <div class="grid-nav-top">
-                <div class="grid-nav-box-logo">
-                    <span class="mdi mdi-home nav-sublogo"></span>
-                </div>
-                <div class="grid-nav-box">
-                    <a href="index.html">Home</a>
-                </div>
-
-                <div class="grid-nav-box-logo">
-                    <span class="mdi mdi-card-account-details-outline nav-sublogo" class="testing">
+                    <div class="nav-ditem">
+                        <div class="grid-nav-box-logo">
+                            <span class="mdi mdi-card-account-details-outline nav-sublogo" class="testing">
                 </span>
-                </div>
-                <div class="grid-nav-box">
-                    <a href="pages/profile.html">Profile</a>
+                        </div>
+                        <div class="grid-nav-box">
+                            <a href="pages/profile.html">Profile</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-ditem">
+                        <div class="grid-nav-box-logo">
+                            <span class="mdi mdi-message flipped nav-sublogo"></span>
+                        </div>
+                        <div class="grid-nav-box">
+                            <a href="messages.html">Messages</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-ditem">
+                        <div class="grid-nav-box-logo">
+                            <span class="mdi mdi-clock-time-five nav-sublogo"></span>
+                        </div>
+                        <div class="grid-nav-box">
+                            <a href="history.html">History</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-ditem">
+                        <div class="grid-nav-box-logo">
+                            <span class="mdi mdi-note-multiple nav-sublogo"></span>
+                        </div>
+                        <div class="grid-nav-box">
+                            <a href="tasks.html">Tasks</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-ditem">
+                        <div class="grid-nav-box-logo">
+                            <span class="mdi mdi-account-group nav-sublogo"></span>
+                        </div>
+                        <div class="grid-nav-box">
+                            <a href="communities.html">Communities</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grid-nav-box-logo">
-                    <span class="mdi mdi-message flipped nav-sublogo"></span>
-                </div>
-                <div class="grid-nav-box">
-                    <a href="messages.html">Messages</a>
-                </div>
+                <div class="nav-ditems">
+                    <div class="grid-nav-bottom">
+                        <div class="nav-ditem">
+                            <div class="grid-nav-box-logo">
+                                <span class="mdi mdi-cog nav-sublogo"></span>
+                            </div>
+                            <div class="grid-nav-box">
+                                <a href="settings.html">Settings</a>
+                            </div>
+                        </div>
 
-                <div class="grid-nav-box-logo">
-                    <span class="mdi mdi-clock-time-five nav-sublogo"></span>
-                </div>
-                <div class="grid-nav-box">
-                    <a href="history.html">History</a>
-                </div>
+                        <div class="nav-ditem">
+                            <div class="grid-nav-box-logo">
+                                <span class="mdi mdi-help-box nav-sublogo"></span>
+                            </div>
+                            <div class="grid-nav-box">
+                                <a href="support.html">Support</a>
+                            </div>
+                        </div>
 
-                <div class="grid-nav-box-logo">
-                    <span class="mdi mdi-note-multiple nav-sublogo"></span>
-                </div>
-                <div class="grid-nav-box">
-                    <a href="tasks.html">Tasks</a>
-                </div>
-
-                <div class="grid-nav-box-logo">
-                    <span class="mdi mdi-account-group nav-sublogo"></span>
-                </div>
-                <div class="grid-nav-box">
-                    <a href="communities.html">Communities</a>
-                </div>
-            </div>
-
-            <div class="grid-nav-bottom">
-                <div class="grid-nav-box-logo">
-                    <span class="mdi mdi-cog nav-sublogo"></span>
-                </div>
-                <div class="grid-nav-box">
-                    <a href="settings.html">Settings</a>
-                </div>
-
-                <div class="grid-nav-box-logo">
-                    <span class="mdi mdi-help-box nav-sublogo"></span>
-                </div>
-                <div class="grid-nav-box">
-                    <a href="support.html">Support</a>
-                </div>
-
-                <div class="grid-nav-box-logo">
-                    <span class="mdi mdi-shield-check nav-sublogo"></span>
-                </div>
-                <div class="grid-nav-box">
-                    <a href="privacy.html">Privacy</a>
+                        <div class="nav-ditem">
+                            <div class="grid-nav-box-logo">
+                                <span class="mdi mdi-shield-check nav-sublogo"></span>
+                            </div>
+                            <div class="grid-nav-box">
+                                <a href="privacy.html">Privacy</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,10 +4,6 @@
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1.1fr 5fr;
-    grid-template-rows: 1fr 6fr;
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -16,8 +12,6 @@ body {
 /*Navigation Panel*/
 
 nav {
-    grid-column: 1 / 2;
-    grid-row: span 5;
     padding-top: 10px;
     color: white;
     background-color: #204994;
@@ -41,10 +35,49 @@ a:hover {
     padding-left: 5px;
 }
 
+.nav-main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.menubtn.active {
+    background: #191765;
+    z-index: 2;
+}
+
+.nav-ditems {
+    display: none;
+    list-style: none;
+    text-decoration: none;
+    color: #edecff;
+}
+
+.nav-ditems.active {
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #191765;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #edecff;
+    padding-top: 12%;
+}
+
 .grid-nav {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr 3fr;
 }
 
 .grid-nav-head {
@@ -61,23 +94,11 @@ a:hover {
 }
 
 .grid-nav-top {
-    display: grid;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto;
-    align-items: end;
-    margin-top: 30px;
+    display: none;
 }
 
 .grid-nav-bottom {
-    display: grid;
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto;
-    align-items: end;
-    margin-top: 30px;
+    display: none;
 }
 
 .grid-nav-box-logo {
@@ -93,8 +114,6 @@ a:hover {
 /* Header stuff */
 
 header {
-    grid-column: 2;
-    grid-row: 1 / 1.5;
     padding-left: 30px;
     padding-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -102,9 +121,6 @@ header {
 }
 
 .grid-header {
-    display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    grid-template-rows: 1fr 2.5fr;
     align-items: center;
 }
 
@@ -116,8 +132,6 @@ header {
 .grid-header-search {
     align-items: center;
     vertical-align: middle;
-    display: grid;
-    grid-template-columns: .5fr 9fr;
 }
 
 input {
@@ -128,12 +142,7 @@ input {
 }
 
 .top-header-right {
-    display: grid;
-    grid-template-columns: .3fr .4fr 1fr;
-    align-items: center;
-    width: 250px;
-    justify-items: end;
-    margin-left: 100px;
+    display: none;
 }
 
 .bellicon {
@@ -208,6 +217,13 @@ input {
 
 .img-greeting {
     grid-row: span 2;
+}
+
+
+/* Main */
+
+main {
+    height: 100vh;
 }
 
 
