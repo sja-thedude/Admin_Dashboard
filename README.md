@@ -54,9 +54,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- I would like to thank microverse for the opportunity.
+- I would like to thank my career coach (Mustapha) for his guidance and support.
 
 ## 📝 License
 
