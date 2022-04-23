@@ -1,58 +1,59 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (min-width: 992px) {
     body {
-        display: grid;
-        grid-template-columns: 1.1fr 5fr;
-        grid-template-rows: 1fr 6fr;
-        height: 100vh;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
+      display: grid;
+      grid-template-columns: 1.1fr 5fr;
+      grid-template-rows: 1fr 6fr;
+      height: 100vh;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
     }
+
     /*Navigation Panel*/
     nav {
-        grid-column: 1 / 2;
-        grid-row: span 5;
-        padding-top: 10px;
-        color: white;
-        background-color: #204994;
-        padding-left: 10px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      grid-column: 1 / 2;
+      grid-row: span 5;
+      padding-top: 10px;
+      color: white;
+      background-color: #204994;
+      padding-left: 10px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
     a {
-        color: white;
-        text-decoration: none;
-        transition: .5s ease;
+      color: white;
+      text-decoration: none;
+      transition: .5s ease;
     }
     a:hover {
-        color: rgb(200, 208, 233);
+      color: rgb(200, 208, 233);
     }
     .navlogo {
-        font-size: 2rem;
-        margin-right: 10px;
-        padding-left: 5px;
+      font-size: 2rem;
+      margin-right: 10px;
+      padding-left: 5px;
     }
     .menubtn {
-        display: none;
+      display: none;
     }
     .grid-nav {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 6fr 3fr;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 6fr 3fr;
     }
     .grid-nav-head {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: auto;
-        align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: auto;
+      align-items: center;
     }
     .grid-nav-title {
-        font-size: 1.3rem;
-        align-items: center;
-        margin-right: 20px;
+      font-size: 1.3rem;
+      align-items: center;
+      margin-right: 20px;
     }
     .grid-nav-top {
         display: grid;
@@ -150,52 +151,59 @@
         color: #204994;
         font-weight: 600;
     }
+
     .buttons-header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 280px;
-        margin-left: 100px;
-        margin-top: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 280px;
+      margin-left: 100px;
+      margin-top: 15px;
     }
+
     .user-avatar-med {
-        width: 45px;
-        height: 60px;
+      width: 45px;
+      height: 60px;
     }
+
     .greeting-header {
-        display: grid;
-        grid-template-columns: .2fr 1fr;
-        grid-template-rows: 1fr 2fr;
-        align-items: center;
-        width: 400px;
+      display: grid;
+      grid-template-columns: .2fr 1fr;
+      grid-template-rows: 1fr 2fr;
+      align-items: center;
+      width: 400px;
     }
+
     .greeting {
-        font-size: .8rem;
-        margin-bottom: -15px;
-        font-weight: 700;
+      font-size: .8rem;
+      margin-bottom: -15px;
+      font-weight: 700;
     }
+
     .greeting-name {
-        margin-top: 0;
-        font-size: 1.3rem;
-        font-weight: 700;
+      margin-top: 0;
+      font-size: 1.3rem;
+      font-weight: 700;
     }
+
     .img-greeting {
-        grid-row: span 2;
+      grid-row: span 2;
     }
+
     /* Footer */
     footer {
-        position: relative;
-        background-color: rgb(255, 255, 255);
-        bottom: 0;
-        padding: 10px;
-        color: #292929;
-        text-align: center;
-        font-size: .85rem;
-        font-weight: 500;
+      position: relative;
+      background-color: rgb(255, 255, 255);
+      bottom: 0;
+      padding: 10px;
+      color: #292929;
+      text-align: center;
+      font-size: .85rem;
+      font-weight: 500;
     }
     footer a {
-        color: #1d53b8;
+      color: #1d53b8;
     }
     footer a:hover {
-        color: #13a7eb;
+      color: #13a7eb;
     }
 }
