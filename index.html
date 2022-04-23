@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Navigation panel -->
+<nav>
+    <div class="nav-grid">
+        <div class="nav-grid-head">
+            <div class="nav-grid-logo">
+                <span class="mdi mdi-view-dashboard navlogo"></span>
+            </div>
+            <div class="nav-grid-title">
+                <p>Dashboard</p>
+            </div>
+        </div>
+
+        <div class="nav-grid-top">
+            <div class="nav-grid-box-logo">
+                <span class="mdi mdi-home nav-sublogo"></span>
+            </div>
+            <div class="nav-grid-box">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-grid-box-logo">
+                <span class="mdi mdi-card-account-details-outline nav-sublogo testing"></span>
+            </div>
+            <div class="nav-grid-box">
+                <a href="pages/profile.html">Profile</a>
+            </div>
+            <div class="nav-grid-box-logo">
+                <span class="mdi mdi-message flipped nav-sublogo"></span>
+            </div>
+            <div class="nav-grid-box">
+                <a href="pages/messages.html">Messages</a>
+            </div>
+            <div class="nav-grid-box-logo">
+                <span class="mdi mdi-clock-time-three nav-sublogo"></span>
+            </div>
+            <div class="nav-grid-box">
+                <a href="pages/history.html">History</a>
+            </div>
+            <div class="nav-grid-box-logo">
+                <span class="mdi mdi-note-multiple nav-sublogo"></span>
+            </div>
+            <div class="nav-grid-box">
+                <a href="pages/tasks.html">Tasks</a>
+            </div>
+            <div class="nav-grid-box-logo">
+                <span class="mdi mdi-account-group nav-sublogo"></span>
+            </div>
+            <div class="nav-grid-box">
+                <a href="pages/communities.html">Communities</a>
+            </div>
+        </div>
+        <div class="nav-grid-bottom">
+            <div class="nav-grid-box-logo">
+                <span class="mdi mdi-cog nav-sublogo"></span>
+            </div>
+            <div class="nav-grid-box">
+                <a href="pages/settings.html">Settings</a>
+            </div>
+            <div class="nav-grid-box-logo">
+                <span class="mdi mdi-help-box nav-sublogo"></span>
+            </div>
+            <div class="nav-grid-box">
+                <a href="pages/support.html">Support</a>
+            </div>
+            <div class="nav-grid-box-logo">
+                <span class="mdi mdi-shield-check nav-sublogo"></span>
+            </div>
+            <div class="nav-grid-box">
+                <a href="pages/privacy.html">Privacy</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Header panel -->
+<header>
+    <div class="header-grid">
+        <div class="header-grid-search">
+            <span class="mdi mdi-magnify magnify"></span>
+            <input type="text" name="search" class="searchbar">
+        </div>
+
+        <div class="header-top-right">
+            <span class="mdi mdi-bell-ring-outline bellicon"></span>
+            <img src="sja.png" alt="SJA" class="user-avatar-small">
+                <h4>Syeda Juveria Afreen</h4>
+        </div>
+
+        <div class="header-greeting">
+            <div class="greeting-img">
+                <img src="sja.png" alt="SJA" class="user-avatar-med">
+            </div>
+            <p class="greeting">Hi there,</p>
+            <p class="greeting-name">Syeda Juveria Afreen (@sja-thedude)</p>
+        </div>
+
+        <div class="header-buttons">
+            <button type="button" class="headerbtn">
+                New
+            </button>
+            <button type="button" class="headerbtn">
+                Upload
+            </button>
+            <button type="button" class="headerbtn">
+                Share
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Main panel -->
+<main>
+    <div class="main-container">
+        <div class="main-projects">
+            <div class="main-projects-title">
+                Your Projects
+            </div>
+            <div class="main-projects-box">
+                <div class="projects-box-text">
+                <h4>Super Cool Project</h4>
+                <p class="projects-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi.</p>
+                </div>
+                <div class="project-icons">
+                    <span class="mdi mdi-star-remove-outline project-icon"></span>
+                    <span class="mdi mdi-eye-plus-outline project-icon"></span>
+                    <span class="mdi mdi-share-variant-outline yshape project-icon"></span>
+                </div>
+            </div>
+            <div class="main-projects-box">
+                <div class="projects-box-text">
+                    <h4>Less Cool Project</h4>
+                    <p class="projects-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi. Maxime mollitia,
+                        molestiae quas vel sint commodi.</p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="mdi mdi-star-remove-outline project-icon"></span>
+                        <span class="mdi mdi-eye-plus-outline project-icon"></span>
+                        <span class="mdi mdi-share-variant-outline yshape project-icon"></span>
+                    </div>
+            </div>
+            <div class="main-projects-box">
+                <div class="projects-box-text">
+                    <h4>Easy Peasy App</h4>
+                    <p class="projects-p">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="mdi mdi-star-remove-outline project-icon"></span>
+                        <span class="mdi mdi-eye-plus-outline project-icon"></span>
+                        <span class="mdi mdi-share-variant-outline yshape project-icon"></span>
+                    </div>
+            </div>
+            <div class="main-projects-box">
+                <div class="projects-box-text">
+                    <h4>Impossible App</h4>
+                    <p class="projects-p">In hac habitasse platea dictumst. Vivamus dictum nutrum acru, a placerat velit sagittis id.</p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="mdi mdi-star-remove-outline project-icon"></span>
+                        <span class="mdi mdi-eye-plus-outline project-icon"></span>
+                        <span class="mdi mdi-share-variant-outline yshape project-icon"></span>
+                    </div>
+            </div>
+            <div class="main-projects-box">
+                <div class="projects-box-text">
+                    <h4>Ad Blocker</h4>
+                    <p class="projects-p">Quisque eget nutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="mdi mdi-star-remove-outline project-icon"></span>
+                        <span class="mdi mdi-eye-plus-outline project-icon"></span>
+                        <span class="mdi mdi-share-variant-outline yshape project-icon"></span>
+                    </div>
+            </div>
+            <div class="main-projects-box">
+                <div class="projects-box-text">
+                    <h4>Money Maker</h4>
+                    <p class="projects-p">Praesent convallis, libero quis congue elementum nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                    </div>
+                    <div class="project-icons">
+                        <span class="mdi mdi-star-remove-outline project-icon"></span>
+                        <span class="mdi mdi-eye-plus-outline project-icon"></span>
+                        <span class="mdi mdi-share-variant-outline yshape project-icon"></span>
+                    </div>
+            </div>
+        </div>
+
+        <div class="main-grid-side">
+            <div class="main-side-title1">
+                <h4>Announcements</h4>
+            </div>
+            <div class="main-side-box1">
+                <div class="announcement bb">
+                    <h4>Site Maintenance</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi...</p> 
+                </div>
+                
+                <div class="announcement bb">
+                    <h4>Community Share Day</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia...
+                    </p>
+                </div>
+                
+                <div class="announcement">
+                    <h4>Updated Privacy Policy</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi...</p>
+                </div>
+                
+            </div>
+            <div class="main-side-title2">
+                <h4>Trending</h4>
+            </div>
+            <div class="main-side-box2">
+                <div class="trending-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" alt="img" class="user-avatar-small">
+                    <div class="trending-box-text">
+                        <p class="username">@tegan</p>
+                        <p class="appname">World Peace Builder</p>
+                    </div>
+                </div>
+                <div class="trending-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="img" class="user-avatar-small">
+                    <div class="trending-box-text">
+                        <p class="username">@risclover</p>
+                        <p class="appname">Best App Ever</p>
+                    </div>
+                </div>
+                <div class="trending-box">
+                    <img src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt="img" class="user-avatar-small">
+                    <div class="trending-box-text">
+                        <p class="username">@oakley</p>
+                        <p class="appname">Pretty Cool Stuff</p>
+                    </div>
+                </div>
+                <div class="trending-box">
+                    <img src="https://truesun.in/wp-content/uploads/2021/08/62681-flat-icons-face-computer-design-avatar-icon.png" alt="img" class="user-avatar-small">
+                    <div class="trending-box-text">
+                        <p class="username">@odin</p>
+                        <p class="appname">No Traffic Maker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>Created By <a href="https://www.github.com/sja-thedude" rel="noreferrer noopener" target="_blank">sja-thedude</a> for <a href="https://theodinproject.com/" rel="noreferrer noopener" target="_blank">Side Project</a> at <a href="https://www.github.com/sja-thedude" rel="noreferrer noopener" target="_blank">sja-thedude</a> for <a href="https://microverse.org/"
+        rel="noreferrer noopener" target="_blank">Microverse</a></p>
+</footer>
+</body>
+</html>
